@@ -7,7 +7,7 @@ import (
 	"unordered-events/commands"
 	"unordered-events/domain/cat"
 	"unordered-events/domain/catowner"
-	"unordered-events/input/kafka"
+	"unordered-events/kafka"
 	"unordered-events/postgres"
 )
 
