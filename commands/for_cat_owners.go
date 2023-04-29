@@ -64,7 +64,7 @@ func (ex *CreateTasksToActualizeCatBirthdayCommandExecutor) Execute(catID, newCa
 		return
 	}
 
-	catOwnersTotal := ex.catOwnerRepository.CountCatOwnersByCatID(catID)
+	catOwnersTotal := ex.catOwnerRepository.CountByCatID(catID)
 
 	const limit = 1
 

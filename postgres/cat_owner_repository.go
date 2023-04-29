@@ -21,7 +21,7 @@ func (r CatOwnerRepository) ListByCatID(catID, offset, limit int) []*catowner.Ca
 	return catOwners[start:end]
 }
 
-func (r CatOwnerRepository) CountCatOwnersByCatID(catID int) int {
+func (r CatOwnerRepository) CountByCatID(catID int) int {
 	return len(r.filterByCatID(catID))
 }
 

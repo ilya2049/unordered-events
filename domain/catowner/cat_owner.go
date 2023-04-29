@@ -35,6 +35,6 @@ func (e *ActualizeCatBirthdayTaskCreatedEvent) String() string {
 
 type Repository interface {
 	ListByCatID(catID, offset, limit int) []*CatOwner
-	CountCatOwnersByCatID(catID int) int
+	CountByCatID(catID int) int
 	Update(aCatOwner *CatOwner)
 }
